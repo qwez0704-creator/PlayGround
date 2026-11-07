@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10111b" />
+  <title>Eclipse — Ashes of the Astral Throne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-shell">
+    <header class="topbar">
+      <button class="brand" data-view="battle" aria-label="Eclipse home"><span class="brand-mark">☾</span><span class="brand-name">ECLIPSE<small>ASHES OF THE ASTRAL THRONE</small></span></button>
+      <div class="chapter-label"><span class="live-dot"></span> CHAPTER I <b>·</b> THE VEILFALL</div>
+      <div class="resources"><div class="resource"><span class="coin-icon">✧</span><b id="currency">1,240</b><button class="plus" data-view="summon">+</button></div><div class="resource"><span class="stamina-icon">ϟ</span><b id="stamina">38</b><button class="plus" id="staminaPlus">+</button></div><button class="profile"><span>✦</span><b>LV. 12</b></button></div>
+    </header>
+    <aside class="sidebar">
+      <div class="side-caption">SANCTUARY</div>
+      <button class="nav-item active" data-view="battle"><span class="nav-icon">⚔</span><span>Battle</span><i></i></button>
+      <button class="nav-item" data-view="heroes"><span class="nav-icon">♙</span><span>Heroes</span><em id="heroCount">04</em></button>
+      <button class="nav-item" data-view="summon"><span class="nav-icon">✧</span><span>Summon</span><span class="nav-new">NEW</span></button>
+      <button class="nav-item" data-view="relics"><span class="nav-icon">◇</span><span>Relics</span></button>
+      <div class="side-divider"></div>
+      <div class="side-caption">FIELD NOTES</div>
+      <div class="quest-mini"><span class="quest-icon">✦</span><div><b>Daily mission</b><small>Win 1 battle</small><div class="quest-progress"><i></i></div></div><span class="quest-reward">+80</span></div>
+      <div class="side-bottom"><div class="online"><i></i> DATA SAVED</div><small>v0.9.4 · THE VEILFALL</small></div>
+    </aside>
+    <main id="mainView" class="main-view"></main>
+    <nav class="mobile-nav" aria-label="Game navigation"><button data-view="battle" class="active"><span>⚔</span>Battle</button><button data-view="heroes"><span>♙</span>Heroes</button><button data-view="summon"><span>✧</span>Summon</button><button data-view="relics"><span>◇</span>Relics</button></nav>
+    <div class="toast" id="toast"></div>
+    <div class="modal-layer" id="modalLayer"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
